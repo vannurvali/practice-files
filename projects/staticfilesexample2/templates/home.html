@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="submit">
+    <input type="text" name="name" placeholder="name" id="name">
+    <br>
+    <br>
+    <input type="button" value="checkname" onclick="func()">
+    <br>
+    <br>
+    <input type="submit" value="send data">
+</form>
+
+<script src="{% static 'sample.js' %}"></script>
+
+
+</body>
+</html>

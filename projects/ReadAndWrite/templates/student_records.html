@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .center{
+            width : 50%;
+            margin : 20px auto;
+        }
+    </style>
+</head>
+<body>
+<form action="getresultsbaseduniv">
+<div class="center">
+{% for i in obj %}
+ <h1> name : {{i.student_name}} | branch : {{i.student_branch}} | univ : {{i.student_univ}} </h1>
+    <hr>
+
+
+{% endfor %}
+    </div>
+
+</form>
+</body>
+</html>

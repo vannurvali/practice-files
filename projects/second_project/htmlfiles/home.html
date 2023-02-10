@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css'%}">
+</head>
+<body>
+<h1>welcome</h1>
+
+<form action="getdata" method="get">
+    <div class= "center" >
+    <input type= "text" name = "in1" placeholder = "enter your name" >
+    <br>
+    <br>
+    <input class="btn" type="submit" value="enter">
+        <div class=" "center>
+
+
+</form>
+
+<h2>hai {{name}} welcome user</h2>
+<img src="{% static 'sample.pnj' %}">
+
+</body>
+</html>

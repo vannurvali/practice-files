@@ -1,0 +1,17 @@
+h1,h2{
+     text-align : center;
+     color : red ;
+
+}
+
+.center{
+     text-align : center;
+
+}
+
+.btn{
+     background-color : red;
+     padding : 10px
+     color : white;
+
+}

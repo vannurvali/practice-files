@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="submitdata" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="phone" placeholder="enter phone number">
+    <input type="text" name="email" placeholder="enter email">
+    <input type="file" name="pic">
+    <input type="submit">
+    <div style="color:red;">
+    {% if phoneerror is not None %}
+    {{phoneerror}}
+    {% endif %}
+</div>
+</form>
+
+</body>
+</html>

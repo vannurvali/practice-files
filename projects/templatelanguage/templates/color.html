@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if name == 'red' %}
+    {% for i in garments %}
+        <h1>{{name}},{{i}}</h1>
+    {% endfor %}
+{% else %}
+    {% for i in garments %}
+        <h1>{{name}},{{i}}</h1>
+    {% endfor %}
+{% endif %}
+
+</body>
+</html>

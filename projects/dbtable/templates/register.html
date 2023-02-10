@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="save" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="enter the name">
+    <br>
+    <br>
+    <input type="text" name="regid" placeholder="enter the regid">
+    <br>
+    <br>
+    <input type="text" name="phonenumber" placeholder="enter mobile num">
+    <br>
+    <br>
+    <input type="text" name="subject" placeholder="enter subject">
+    <br>
+    <br>
+    <input type="submit" value="register">
+
+</form>
+
+</body>
+</html>
